@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>SabayNew</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<style>
+    @media (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+    /* Styles for devices with a max-width of 480px */
+    .menu-bar{
+        display: none;  
+    }
+    .menu-bar .menu ul li a{
+    font-size: 18px;
+    
+    }
+    header{
+        height: 60px;
+        
+    }
+    header .head{
+        display:flex;
+    }
+    header .head i {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    }
+    header .head .logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 170px;
+    }
+    .container .first-new .ads{
+    display: none;
+   
+    }
+    .container .first-new .news{
+    width: 100%;
+   
+    }
+    .container .first-new .news .left{
+    width: 100%;
+    height: 100%;
+    }
+    .container .first-new .news .right{
+    display: none;
+    }
+    .container .first-new .news .box h2{
+    
+    font-size: 18px;
+    }
+    .container .first-new .news .box span{
+        font-size: 14px;
+    }
+    .container .first-new .news .box .data{
+    font-size: 12px;
+    }
+    .container .partContent{
+        font-size: 14px;
+    }
+    .container .boxVideo .boxButton{
+    display: none;
+    }
+    .container .boxVideo{
+    height: 220px;
+    padding: 20px 20px 5px 20x;
+    }
+    .container .boxVideo .boxTop .box{
+    width: 32%;
+    
+    }
+    .container .boxVideo .boxTop .box .img{
+    height: 100%;
+    padding: 3px 0;
+    }
+    .container .boxVideo .boxTop .box .txt span{
+    font-size: 15px;
+    
+    }
+    .container .content{
+    height: 300px;
+    
+    }
+    .container .content .box-left{
+    display: none;
+    }
+    .container .content .box-right{
+    width: 100%;
+    height: 100%;
+    
+    }
+    .container .content .box-right .box1 .box .txt span{
+    
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    }
+    footer .footer .box-middle{
+    display: none;
+    }
+    footer .footer{
+        display: inline-block;
+        text-align: center;
+    }
+    footer .footer .box{
+    width: 100%;
+    }
+    footer .footer .box .span3{
+    margin-left: 40px;
+    }
+    footer .footer .box .icon{
+    margin-left: 120px;
+    }
+
+
+}
+</style>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="head">
+            <div>
+                <i class="fa-solid fa-bars" style="font-size: 22px;" onclick="change()" ></i> 
+            </div>
+           
+            <img class="logo" src="./img/logo.png" alt="">
+        </div>
+    </header>
+    <!-- //stop header -->
+
+    <!-- menu -->
+    <div class="menu-bar">
+        <div class="menu">
+            <ul>
+                <li><a><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a>កម្សាន្ត</a></li>
+                <li><a>បច្ចេកវិទ្យា</a></li>
+                <li><a>ជីវិតនិងសង្គម</a></li>
+                <li><a>កីឡា</a></li>
+                <li><a>AUTO TALK</a></li>
+                <li><a>STARTING UP</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- stop menu -->
+
+    <div class="container">
+        <div class="first-new">
+            <div class="news">
+                <div class="left">
+                    <div class="box">
+                        <img src="./img/car.jpg" alt="">
+                        <div class="dark"></div>
+                        <div class="path" style="background-color: var(--color-blue);">បច្ចេកវិទ្យា</div>
+                        <h2>មិនមែន Tesla! មិនមែន Toyota! រកឃើញ​ក្រុមហ៊ុន​ដែលមាន​តម្លៃថ្លៃ​ជាងគេ នៅដើមឆ្នាំ​នេះ​</h2>
+                        <span>របាយការណ៍ថ្មីបំផុតមួយ បានបង្ហាញថា ក្រុមហ៊ុនដែលមានតម្លៃ​ខ្លួន​ថ្លៃជាងគេបំផុត​ក្នុងពិភពលោក​នេះ គឺ​បានទៅលើក្រុមហ៊ុន Mercedes-Benz វ៉ាដាច់​ក្រុមហ៊ុន Tesla។</span>
+                        <div class="data">ព្រឹកមិញ 10:30 ព្រឹក</div>
+                    </div>
+                    <div class="box">
+                        <img src="./img/1.jpg" alt="">
+                        <div class="dark"></div>
+                        <div class="path" style="background-color: var(--color-green);">ជិវិត​និងសង្គម</div>
+                        <h2>ក្រឡធំ និងក្អម សម័យអង្គរ ព្រមទាំង​ដាវត្រួត​សម័យបារាំង ត្រូវបាន​ប្រគល់​ជូនក្រសួងវប្បធម៌​</h2>
+                        <span>លោកជំទាវបណ្ឌិតសភាចារ្យ ភឿង សកុណា រដ្ឋមន្រ្តីក្រសួងវប្បធម៌និងវិចិត្រសិល្បៈ អមដំណើរដោយថ្នាក់ដឹកនាំ មន្ត្រីជំនាញ និង អាជ្ញាធរដែនដី កាលពីព្រឹកថ្ងៃទី២២ ខែកុម្ភ: ឆ្នាំ២០២៤ បានអញ្ជើញទៅថ្វាយបង្គំ ព្រះតេជព្រះគុណ សាយ ជីវ័ន ព្រះគ្រូចៅអធិការវត្តព្រះហស្ថក្បាល ដែលស្ថិតនៅក្នុងភូមិព្រះហស្ថក្បាល ឃុំផ្ទះរ៉ុង ស្រុកតាលោសែនជ័យ ខេត្តពោធិ៍សាត់។</span>
+                        <div class="data">ព្រឹកមិញ 10:30 ព្រឹក</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <img src="./img/li.jpg" alt="">
+                        <div class="dark"></div>
+                        <div class="path" style="background-color: var(--color-yellow);">កីឡា</div>
+                        <h2>មក​ដឹង​ពី​ស្នាដៃ​របស់​ Klopp ក្រោយ​ដឹកនាំ​ Liverpool ជាង​១០ឆ្នាំ​​</h2>
+                        <span>លោក​ Jurgen Klopp អ្នកចាត់ការ​ក្លឹប​ Liverpool បាន​ដឹកនាំ​ក្លឹប​ Liverpool បាន​ជាង​១០ឆ្នាំ​ហើយ​ចាប់​តាំង​ពី​ឆ្នាំ​២០១៥​ រហូត​មក​ដល់​​បច្ចុប្បន្ន​នេះ​។</span>
+                        <div class="data">ព្រឹកមិញ 10:30 ព្រឹក</div>
+                    </div>
+                    <div class="box">
+                        <img src="./img/meak.jpg" alt="">
+                        <div class="dark"></div>
+                        <div class="path" style="background-color: var(--color-green);">ជិវិត​និងសង្គម</div>
+                        <h2>មុនទៅវត្ត​​ត្រូវដឹងសិនថា ពិធីបុណ្យមាឃបូជា ប្រារព្ធឡើងរំលឹកដល់ព្រឹត្តិការណ៍សំខាន់៣​</h2>
+                        <span>ឆ្នាំនេះ ពិធីបុណ្យមាឃបូជា ដែល​ជាពិធី​បុណ្យដ៏សំខាន់មួយ​ក្នុងព្រះពុទ្ធសាសនា នឹងប្រារព្ធធ្វើឡើង​​នៅថ្ងៃទី២៤ និង ២៥ ខែកុម្ភៈ ឆ្នាំ​២០២៤ ដែល​រាជរដ្ឋាភិបាល​ តែងតែរៀបចំ​ពិធីបុណ្យនេះ នៅបរិវេណ ព្រះមហាសក្យមុនីចេតិយ ភ្នំព្រះរាជទ្រព្យ (ឧត្តុង្គ) ស្ថិតក្នុងស្រុកពញាឮ ខេត្តកណ្តាល។ ជាមួយគ្នានេះ ក្រសួងធម្មការ និងសាសនា បានណែនាំ​ឱ្យបំផុស​ដល់​គ្រប់វត្តអារាមរៀបចំពិធីបុណ្យមាឃបូជា​ឱ្យបាន​មហោឡារិក ស្របតាមទំនៀមទម្លាប់ប្រពៃណីជាតិ។</span>
+                        <div class="data">ព្រឹកមិញ 10:30 ព្រឹក</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ads">
+                <div class="box">
+                    <a target="_blank" href="https://www.facebook.com/events/1059986851971177/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A876125197586262%7D%7D]%22%7D">
+                        <img src="./img/ads.png" alt="">
+                    </a>
+                </div>
+                <div class="center"></div>
+                <div class="box">
+                    <a target="_blank" href="https://www.facebook.com/events/1059986851971177/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A876125197586262%7D%7D]%22%7D">
+                        <img src="./img/ads.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="partContent" style="background-color: var(--color-red); width: 100px;">
+            វីឌីអូ <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="boxVideo">
+            <div class="boxTop">
+                <div class="box">
+                    <div class="img">
+                        <img src="./img/car.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <span>របាយការណ៍ថ្មីបំផុតមួយ បានបង្ហាញថា ក្រុមហ៊ុនដែលមានតម្លៃ​ខ្លួន​ថ្លៃជាងគេបំផុត​ក្នុងពិភពលោក​នេះ</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./img/es.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <span>មក​ស្គាល់​ក្រុម​ជម្រើសជាតិ​​ធ្លាប់​បាន​ឈ្នះ​ប្រកួត​ច្រើន​បំផុត​ក្នុង​ប្រវត្តិសាស្ត្រ​ Euro</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./img/life4.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <span>មហោស្រពភាពយន្ដជប៉ុនអនឡាញ ឆ្នាំ២០២៤ ជិត​បិទបញ្ចប់ ស្រាប់​តែ​អ្នករៀបចំបង្ហើប​ថា ឆ្នាំក្រោយៗកាន់តែពិសេស </span>
+                    </div>
+                </div>
+            </div>
+            <div class="center"> </div>
+            <div class="boxButton">
+                <div class="box-info">
+                    <div class="box-detail">
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/meak.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>ឆ្នាំនេះ ពិធីបុណ្យមាឃបូជា ដែល​ជាពិធី​បុណ្យដ៏សំខាន់មួយ​ក្នុងព្រះពុទ្ធសាសនា នឹងប្រារព្ធធ្វើឡើង​​នៅថ្ងៃទី២៤ និង ២៥ ខែកុម្ភៈ ឆ្នាំ​២០២៤ ដែល​រាជរដ្ឋាភិបាល​ តែងតែរៀបចំ​ពិធីបុណ្យនេះ នៅបរិវេណ ព្រះមហាសក្យមុនីចេតិយ ភ្នំព្រះរាជទ្រព្យ (ឧត្តុង្គ) ស្ថិតក្នុងស្រុកពញាឮ ខេត្តកណ្តាល។ ជាមួយគ្នានេះ ក្រសួងធម្មការ និងសាសនា បានណែនាំ​ឱ្យបំផុស​ដល់​គ្រប់វត្តអារាមរៀបចំពិធីបុណ្យមាឃបូជា​ឱ្យបាន​មហោឡារិក ស្របតាមទំនៀមទម្លាប់ប្រពៃណីជាតិ។</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/m.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>ខ្សែ​ប្រយុទ្ធ​ Kylian Mbappe ត្រូវ​បាន​គេ​រាយការណ៍​ថា​ មិន​ពេញ​ចិត្ត​នឹង​ពាក់​ម៉ាស​ពិសេស​ក្នុង​ការ​ចូល​លេង​ប្រកួត​ Euro 2024។ នេះ​បើ​យោង​តាម​ការ​ចុះ​ផ្សាយ​របស់​ Goal នៅ​ក្នុង​ថ្ងៃ​នេះ​។</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/car1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>ក្រុមហ៊ុន Kia បាន​បង្ហាញចេញ​រថយន្តវ៉ែនដ៏ល្បីល្បាញ​បំផុតរបស់ខ្លួន Carnival ស៊េរីឆ្នាំ​២០២៥ កាលពីដើម​ឆ្នាំនេះ ផ្នែក​ខាងមុខត្រូវបានឌីហ្សាញ​ថ្មីត្រង់ប៉ាណា និងចង្កៀងរាងបញ្ឈរ LED។ ឥឡូវនេះ Kia បាន​ប្រកាស​ចេញតម្លៃផ្លូវការហើយ គឺចាប់ពី ៣៦៥០០ដុល្លារឡើងទៅ នៅទីផ្សារអាមេរិក។ ជាមួយ​គ្នានេះ វាក៏មកជាមួយ option Hybrid ផងដែរ តម្លៃចាប់ពី ៤០៥០០ដុល្លារ។</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/logy1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>ថ្មីៗនេះ ក៏មាន​ក្រុមហ៊ុនចិនឈ្មោះ Jilin Jiqi Longshan Light Vehicle Co., Ltd បានបង្ហាញពីគោលបំណង​​វិនិយោគ​លើការដំឡើង​រថយន្តដឹកជញ្ជូនធុនតូច​នៅតំបន់​សេដ្ឋកិច្ច​ពិសេស​នៅកម្ពុជា ដើម្បីផ្គត់ផ្គង់ទីផ្សារក្នុងស្រុក និងអាចឈាន​ដល់ការនាំចេញ​ថែមទៀត​នាពេលអនាគត​ផងដែរ។</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center"></div>
+                    <div class="box-detail">
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>វត្ថុ​វប្បធម៌បុរាណ​ ពិតជាមាន​សារៈសំខាន់​យ៉ាង​ធំធេង ព្រោះ​វា​តំណាង​ឱ្យ​កេរដំណែល​ប្រវត្តិសាស្ត្រ និង​សិល្បៈ​នៃ​អរិយធម៌។ សម្រាប់ប្រទេសកម្ពុជា ការធ្វើមាតុភូមិនិវត្តន៍នៃវត្ថុបុរាណខ្មែរ គឺជាពេលវេលាដ៏សំខាន់ ដែលតំណាងឱ្យការស្ដារឡើងវិញនូវបេតិកភណ្ឌវប្បធម៌</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/car.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>របាយការណ៍ថ្មីបំផុតមួយ បានបង្ហាញថា ក្រុមហ៊ុនដែលមានតម្លៃ​ខ្លួន​ថ្លៃជាងគេបំផុត​ក្នុងពិភពលោក​នេះ គឺ​បានទៅលើក្រុមហ៊ុន Mercedes-Benz វ៉ាដាច់​ក្រុមហ៊ុន Tesla។</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/li.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>លោក​ Jurgen Klopp អ្នកចាត់ការ​ក្លឹប​ Liverpool បាន​ដឹកនាំ​ក្លឹប​ Liverpool បាន​ជាង​១០ឆ្នាំ​ហើយ​ចាប់​តាំង​ពី​ឆ្នាំ​២០១៥​ រហូត​មក​ដល់​​បច្ចុប្បន្ន​នេះ​។</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img">
+                                <img src="./img/liverpool.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>ក្រុមប្រឹក្សា​សមាគម​បាល់ទាត់​អន្តរជាតិ (IFAB) ដែល​ជា​ស្ថាប័ន​តាក់តែង​ច្បាប់ និង​បទ​វិន័យ​បាល់ទាត់​ បាន​ស្នើ​​ឱ្យ​មាន​ «កាតខៀវ» នៅ​ក្នុង​ការ​ប្រកួត​បាល់ទាត់ សម្រាប់​កំហុស​មួយ​ចំនួន​ក្រៅ​ពី​វិជ្ជាជីវៈ​បាល់ទាត់​។ នេះ​បើ​តាម​ការ​ចុះ​ផ្សាយ​របស់​សារព័ត៌មាន​បាល់ទាត់​ធំៗ​នានា។</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partContent" style="background-color: var(--color-pink); width: 120px;">
+            កម្សាន្ត <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="content">
+            <div class="box-left">
+                <div class="img">
+                    <img src="./img/korea.png" alt="">
+                </div>
+                <div class="txt" style="background-color: var(--color-pink);">
+                    <span>គូថ្មីប្រចាំ ២០២៤? Dispatch ទម្លាយរូបភាពប្រមាញ់បានថា Lee Jae Wook និង Karina ទាក់ទងគ្នា</span>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life2.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>YG បញ្ជាក់​ពីជំនួបផ្ទាល់ជាមួយ 2NE1 និងបង្ហើបដំណឹងល្អនាពេលខាងមុខ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ឥទ្ធិពលនៃការធ្វើមាតុភូមិនិវត្តន៍វត្ថុបុរាណមកលើសង្គមកម្ពុជា​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life3.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>សារៈសំខាន់នៃការធ្វើមាតុភូមិនិវត្តន៍វត្ថុបុរាណខ្មែរ៖ វប្បធម៌សម័យបុរាណ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life4.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មហោស្រពភាពយន្ដជប៉ុនអនឡាញ ឆ្នាំ២០២៤ ជិត​បិទបញ្ចប់ ស្រាប់​តែ​អ្នករៀបចំបង្ហើប​ថា ឆ្នាំក្រោយៗកាន់តែពិសេស</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="center"></div>
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life5.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មហោស្រពភាពយន្ដជប៉ុនអនឡាញ ឆ្នាំ២០២៤ ជិត​បិទបញ្ចប់ ស្រាប់​តែ​អ្នករៀបចំបង្ហើប​ថា ឆ្នាំក្រោយៗកាន់តែពិសេស</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/korea.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>គូថ្មីប្រចាំ ២០២៤? Dispatch ទម្លាយរូបភាពប្រមាញ់បានថា Lee Jae Wook និង Karina ទាក់ទងគ្នា</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life4.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មហោស្រពភាពយន្ដជប៉ុនអនឡាញ ឆ្នាំ២០២៤ ជិត​បិទបញ្ចប់ ស្រាប់​តែ​អ្នករៀបចំបង្ហើប​ថា ឆ្នាំក្រោយៗកាន់តែពិសេស</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/life1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ឥទ្ធិពលនៃការធ្វើមាតុភូមិនិវត្តន៍វត្ថុបុរាណមកលើសង្គមកម្ពុជា</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="partContent" style="background-color: var(--color-blue); width: 140px;">
+            បច្ចេកវិទ្យា <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="content" style="border-top: 3px solid var(--color-blue);">
+            <div class="box-left">
+                <div class="img">
+                    <img src="./img/car.jpg" alt="">
+                </div>
+                <div class="txt" style="background-color: var(--color-blue);">
+                    <span>មិនមែន Tesla! មិនមែន Toyota! រកឃើញ​ក្រុមហ៊ុន​ដែលមាន​តម្លៃថ្លៃ​ជាងគេ នៅដើមឆ្នាំ​នេះ</span>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>BYD នឹង​បើក​រោងចក្រ EV ​ដំបូងគេ​នៅកម្ពុជា ក្រោយ​ប្រកាស​​ដំឡើង​ស្ថានីយសាកភ្លើងប្រមាណ ២០០ទីតាំងទូទាំងប្រទេស</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy2.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>​មជ្ឈមណ្ឌលហ្គេមទាន់សម័យដែលធំជាងគេនៅទីក្រុងភ្នំពេញកំពុងរង់ចាំលោកអ្នក</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy3.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ក្រុមហ៊ុនចិន ផលិតអាគុយសម្រាប់​យន្តហោះអគ្គិសនី ពេលសាកពេញ​អាចហោះបានចម្ងាយ ៣០០០គីឡូម៉ែត្រ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/car.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មិនមែន Tesla! មិនមែន Toyota! រកឃើញ​ក្រុមហ៊ុន​ដែលមាន​តម្លៃថ្លៃ​ជាងគេ នៅដើមឆ្នាំ​នេះ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="center"></div>
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy3.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ក្រុមហ៊ុនចិន ផលិតអាគុយសម្រាប់​យន្តហោះអគ្គិសនី ពេលសាកពេញ​អាចហោះបានចម្ងាយ ៣០០០គីឡូម៉ែត្រ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/car.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មិនមែន Tesla! មិនមែន Toyota! រកឃើញ​ក្រុមហ៊ុន​ដែលមាន​តម្លៃថ្លៃ​ជាងគេ នៅដើមឆ្នាំ​នេះ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy2.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មជ្ឈមណ្ឌលហ្គេមទាន់សម័យដែលធំជាងគេនៅទីក្រុងភ្នំពេញកំពុងរង់ចាំលោកអ្នក</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/logy1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>BYD នឹង​បើក​រោងចក្រ EV ​ដំបូងគេ​នៅកម្ពុជា ក្រោយ​ប្រកាស​​ដំឡើង​ស្ថានីយសាកភ្លើងប្រមាណ ២០០ទីតាំងទូទាំងប្រទេស​ </span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="partContent" style="background-color: var(--color-green); width: 170px;">
+            ជីវិតនិងសង្គម <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="content" style="border-top: 3px solid var(--color-green);">
+            <div class="box-left">
+                <div class="img">
+                    <img src="./img/map.jpg" alt="">
+                </div>
+                <div class="txt" style="background-color: var(--color-green);">
+                    <span>មក​ដឹង​ពី​ប្រទេស​នីមួយៗ​ក្នុង​ តំបន់​ទាំង​៥ របស់​ទ្វីប​អាស៊ី</span>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ស្ពានចាក់អង្រែក្រោម-ព្រែកប្រា៖ សសរគ្រឹះ ៣៦ដើម ត្រូវបានចាក់បេតុងរួចរាល់​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new2.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ឥទ្ធិពល DAKINI SKY MUSIC FESTIVAL លើវិស័យទេសចរណ៍ និងវប្បធម៌កម្ពុជា​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new4.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>នាឡិកា​កម្ពស់​ ៣៥ម៉ែត្រ​ នឹង​លេចត្រដែត​ឡើងនៅ​តាមដង​ព្រែកកំពង់បាយ​ ខេត្តកំពត បន្ទាប់ពីសេះសមុទ្រ</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/map.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មក​ដឹង​ពី​ប្រទេស​នីមួយៗ​ក្នុង​ តំបន់​ទាំង​៥ របស់​ទ្វីប​អាស៊ី</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="center"></div>
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new4.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>នាឡិកា​កម្ពស់​ ៣៥ម៉ែត្រ​ នឹង​លេចត្រដែត​ឡើងនៅ​តាមដង​ព្រែកកំពង់បាយ​ ខេត្តកំពត បន្ទាប់ពីសេះសមុទ្រ​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/map.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មក​ដឹង​ពី​ប្រទេស​នីមួយៗ​ក្នុង​ តំបន់​ទាំង​៥ របស់​ទ្វីប​អាស៊ី</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ស្ពានចាក់អង្រែក្រោម-ព្រែកប្រា៖ សសរគ្រឹះ ៣៦ដើម ត្រូវបានចាក់បេតុងរួចរាល់</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/new2.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>ឥទ្ធិពល DAKINI SKY MUSIC FESTIVAL លើវិស័យទេសចរណ៍ និងវប្បធម៌កម្ពុជា</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="partContent" style="background-color: var(--color-yellow); width: 120px;">
+            កីឡា <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="content" style="border-top: 3px solid var(--color-yellow);">
+            <div class="box-left">
+                <div class="img">
+                    <img src="./img/debrune.jpg" alt="">
+                </div>
+                <div class="txt" style="background-color: var(--color-yellow);">
+                    <span>Pep ឆ្លើយ​បែប​នេះ​ទាក់ទង​នឹង​រឿង​ក្លឹប​អារ៉ាប៊ីសាអ៊ូឌីត​ចង់​បាន​ De Bruyne</span>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/sub-logo/co.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>កូឡុំប៊ី ជា​​ក្រុម​ទី ៤ ដែល​ឡើង​ទៅ​វគ្គ​៨​ក្រុម​ចុង​ក្រោយ​នៃ​ព្រឹត្តិការណ៍ Copa América</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/es.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មក​ស្គាល់​ក្រុម​ជម្រើសជាតិ​​ធ្លាប់​បាន​ឈ្នះ​ប្រកួត​ច្រើន​បំផុត​ក្នុង​ប្រវត្តិសាស្ត្រ​ Euro​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/ronaldo.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>អ្នក​ណា​​អាច​បំបែក​កំណត់​ត្រា​ Ronaldo ​ដែល​រក​បាន​១៤​គ្រាប់​នៅ EURO? ​</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/noco.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>Nico Williams របស់ Bilbao ឆ្លើយ​បែប​នេះ​ក្រោយ​​ក្លឹប​មួយ​ចំនួន​ធំ​ព្យាយាម​ចង់​បាន​គេ​</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="center"></div>
+                <div class="box1">
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/ronaldo.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>អ្នក​ណា​​អាច​បំបែក​កំណត់​ត្រា​ Ronaldo ​ដែល​រក​បាន​១៤​គ្រាប់​នៅ EURO?​ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/noco.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>​Nico Williams របស់ Bilbao ឆ្លើយ​បែប​នេះ​ក្រោយ​​ក្លឹប​មួយ​ចំនួន​ធំ​ព្យាយាម​ចង់​បាន​គេ </span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/debrune.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>Pep ឆ្លើយ​បែប​នេះ​ទាក់ទង​នឹង​រឿង​ក្លឹប​អារ៉ាប៊ីសាអ៊ូឌីត​ចង់​បាន​ De Bruyne</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="./img/es.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>មក​ស្គាល់​ក្រុម​ជម្រើសជាតិ​​ធ្លាប់​បាន​ឈ្នះ​ប្រកួត​ច្រើន​បំផុត​ក្នុង​ប្រវត្តិសាស្ត្រ​ Euro​ </span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="box">
+                <img src="./img/footer-logo.png" alt=""><br>
+                <span class="span1">© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០២៤</span><br>
+                <a href="https://sabay.com/privacy-policy/" target="_blank">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
+                <span class="span2">
+                    អាសយដ្ឋាន
+                </span><br>
+                <span class="span3">
+                    អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស <br>
+                    សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ
+                </span>
+            </div>
+            <div class="box-middle">
+                 <h3>អំពីយើង</h3><br>
+                <span class="span1">Sabay Digital Corporation ជា​ក្រុមហ៊ុន​ព័ត៌មាន​ឌីជីថល និង​កម្សាន្ត​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។</span>
+                <a href="https://sabay.com/">ព័ត៌មាន​បន្ថែម</a><br>
+                <span class="span2">ផលិត​ផល​ និង​ សេវាកម្ម របស់ Sabay</span>
+                <div class="logo">
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo (1).png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo (3).png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo (4).png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo.png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/61d4f62a95ade_1641346560_small.png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/61d5007946e0b_1641349200_small.png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/61d501f25761a_1641349560_small.png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo (3).png" alt="">
+                    </div>
+                    <div class="box-logo">
+                        <img src="./img/sub-logo/logo (1).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="margin-left: 15px;">
+                <h3>ជួបគ្នានៅបណ្តាញសង្គម</h3>
+                <div class="icon">
+                   
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                
+                </div>
+                <span class="span2">
+                    ទំនាក់ទំនង
+                </span><br>
+                <span class="span3" style="font-size: 15px;">
+                    info@sabay.com
+                </span><br>
+                <span class="span3" style="font-size: 14px;">
+                    012 345 678
+                </span><br>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js">
+
+</script>
+</html>
